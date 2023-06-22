@@ -1,0 +1,55 @@
+ion-menu-button {
+  --border-radius: 4px;
+  --color: #6707BA;
+  --color-focused: #460a7a;
+  --color-hover: #370563;
+  --padding-bottom: 4px;
+  --padding-end: 4px;
+  --padding-start: 4px;
+  --padding-top: 4px;
+}
+.contenedorPersonaje{
+  margin-top: 30px;
+  text-align: center;
+}
+.groot{
+  color: #7A7136;
+}
+.descripciongroot{
+  color: #7A7136;
+}
+.descripcionrocket{
+  color: #ACAD9B;
+}
+.rocket{
+  color: #ACAD9B;;
+}
+.drax{
+  color: #A3815F;
+}
+.descripcion-drax{
+  color: #A3815F;
+}
+.gamora{
+  color: #CA6087;
+}
+.descripcion-gamora{
+  color: #CA6087;
+}
+.starlord{
+  color: #A0514B;
+}
+.descripcion-starlord{
+  color:#A0514B;
+}
+.btnPersonaje{
+  width: 100%;
+  background-color: #6707BA;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.btnPersonaje:active{
+  background-color: #370563;
+}

@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Momentos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Momentos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-item *ngIf="!mostrarmomento">
+    <button (click)="mostrarmomento = !mostrarmomento" class="btnimg"><img src="https://img.europapress.es/fotoweb/fotonoticia_20230426143243_1200.jpg"/></button>
+  </ion-item>
+  <ion-item *ngIf="!mostrarmomento">
+    <div class="contenedorTitle">
+      <h2>Me quiero llamar...</h2>
+    </div>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento">
+    <div class="vidMomentos">
+      <h2>Este video fue removido porque pesaba mas de 100mb y github se puso piki</h2>
+    </div>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento">
+    <p>En este momento podemos ver los animales que se encuentran con rocket al principio de la pelicula y podemos ver como ellos estan encerrados y dicen frases como. me gustaria llamarme...</p>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento">
+    <button (click)="mostrarmomento = !mostrarmomento" class="btn-cerrarvideo">Cerrar Video</button>
+  </ion-item>
+
+  <ion-item *ngIf="!mostrarmomento2">
+    <button (click)="mostrarmomento2 = !mostrarmomento2" class="btnimg"><img src="https://culturageek.com.ar/wp-content/uploads/2023/05/does-guardians-of-the-galaxy-vol-3-have-a-post-credits-scene1.jpg"/></button>
+  </ion-item>
+  <ion-item *ngIf="!mostrarmomento2">
+    <div class="contenedorTitle">
+      <h2>Problema con la linea de los comunicadores</h2>
+    </div>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento2">
+    <div class="vidMomentos">
+      <video src="../../assets/vid/problemswiththecomunicator.mp4" controls></video>
+    </div>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento2">
+    <p>En este momento podemos ver como nuestros piratas intergalacticos estan teniendo una confusion con los canales de los comunicadores</p>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento2">
+    <button (click)="mostrarmomento2 = !mostrarmomento2" class="btn-cerrarvideo">Cerrar Video</button>
+  </ion-item>
+
+
+  <ion-item *ngIf="!mostrarmomento3">
+    <button (click)="mostrarmomento3 = !mostrarmomento3" class="btnimg"><img src="https://www.cinemascomics.com/wp-content/uploads/2020/06/movies-guardians-of-the-galaxy-nebula-karen-gillan.jpg"/></button>
+  </ion-item>
+  <ion-item>
+    <div class="contenedorTitle">
+      <h2>Nebula no puede abrir el auto</h2>
+    </div>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento3">
+    <div class="vidMomentos">
+      <video src="../../assets/vid/nebulacantopenthecardoor.mp4" controls></video>
+    </div>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento3">
+    <p>En este momento podemos ver como nebula no podia abrir la puerta del carro.</p>
+  </ion-item>
+  <ion-item *ngIf="mostrarmomento3">
+    <button (click)="mostrarmomento3 = !mostrarmomento3" class="btn-cerrarvideo">Cerrar Video</button>
+  </ion-item>
+</ion-content>
